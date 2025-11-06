@@ -1,9 +1,9 @@
 /* Banner */
 .banner {
 
-	width: 100%;
-    max-height: 550px;
-	color: white;
-	padding: 2em;
+	width: 101%;
+    max-height: 460px;
+	color: rgba(226, 186, 186, 0.411);
+	padding: 1em;
 	text-align: center;
   }
