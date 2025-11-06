@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web development - Innovación Sostenible</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/mapa.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Contenedor para cargar el header -->
+  <div id="header-container"></div>
+  
+  <!-- Banner -->
+  <!-- Contenedor para cargar el Banner -->
+  <div id="banner-container"></div>
+ 
+  <!-- Nosotros -->
+  <!-- Contenedor para cargar Nosotros -->
+  <div id="nosotros-container"></div>
+
+  <!-- Mapa -->
+  <!-- Contenedor para cargar el mapa -->
+  <div id="map-container"></div>
+
+  <!-- Contacto -->
+  <!-- Contenedor para cargar el formulario de contacto -->
+  <div id="contacto-container"></div>
+
+  <!-- Footer -->
+  <!-- Contenedor para cargar el footer -->
+  <div id="footer-container"></div>
+
+  <script src="main.js"></script>
+  <script>
+    const components = {
+      "header-container": "components/header.html",
+      "banner-container": "components/banner.html",
+      "nosotros-container": "components/nosotros.html",
+      "map-container": "components/mapa.html",
+      "contacto-container": "components/contacto.html",
+      "footer-container": "components/footer.html"
+    };
+
+    Object.entries(components).forEach(([id, url]) => {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => console.error(`Error cargando ${url}:`, error));
+    });
+  </script>
+  
+</body>
+
+</html>

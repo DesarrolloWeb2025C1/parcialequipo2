@@ -1,0 +1,55 @@
+/* Estilos del contenido principal */
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+/* galeria de integrantes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjeta de cada integrante */
+.integrante {
+    width: 200px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* foto del perfil */
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #3A89C9;
+    margin-bottom: 10px;
+}
+
+/* Nombre del integrante */
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+}
+
+/* Descripción del integrante */
+.descripcion {
+    font-size: 14px;
+    color: #555;
+}
+
+/* esto solo es para adaptar el sitio a distintos tamaños de pantalla */
+@media screen and (max-width: 600px) {
+    .integrante {
+        width: 100%;
+        max-width: 300px;
+    }
+}

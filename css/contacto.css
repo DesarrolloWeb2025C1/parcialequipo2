@@ -1,0 +1,23 @@
+ /* Formulario */
+ .contacto {
+	margin: 5%;
+ }
+ .contacto-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: 0 auto;
+  }
+  
+  .contacto-form input,
+  .contacto-form textarea {
+	margin-bottom: 1em;
+	padding: 0.5em;
+  }
+   /* Formulario */
+  .contacto-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: 20px;
+  }

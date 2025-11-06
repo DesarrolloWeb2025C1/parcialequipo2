@@ -1,0 +1,19 @@
+  /* Footer */
+  .footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+  }
+  .instagram-icon {
+	color: white;
+    fill: white; /* Blanco por defecto */
+    transition: fill 0.3s ease;
+}
+
+.instagram-icon:hover {
+    fill: yellow; /* Cambia a amarillo en hover */
+}
