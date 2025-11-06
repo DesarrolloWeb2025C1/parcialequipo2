@@ -10,5 +10,24 @@ body {
 	font-family: Arial, sans-serif;
 	color: #ffffff;
 }
+* Contenedor general */
+.contenido {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom, #1e40af, #3b82f6);
+}
 
+/* Cuadros de misión y visión */
+.cuadro {
+  max-width: 900px;           /* ajusta el ancho del cuadro */
+  margin: 30px auto;          /* centra horizontalmente */
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 20px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
 
