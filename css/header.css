@@ -1,7 +1,7 @@
 /* Header */
 .header {
 	background-color: black;
-	color: white;
+	color: rgb(255, 255, 255);
 	padding: 1em;
 	text-align: center;
   }
@@ -9,10 +9,15 @@
   .header nav ul {
 	list-style: none;
 	padding: 0;
+	color: white;
   }
   
   .header nav ul li {
 	display: inline;
 	margin-right: 1em;
+	color: white;
   }
+  .header nav ul li a {
+  color: white;
+}
   
